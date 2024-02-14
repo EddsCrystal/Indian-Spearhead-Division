@@ -8,7 +8,7 @@ html
 /********************** Body ***********************/
 body
 {
-    background-image: url("C:/Users/arnav/Documents/Main Workspace/ISD Website/Media/Background_img_compressed.png");
+    background-image: url("Background_img_compressed.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;

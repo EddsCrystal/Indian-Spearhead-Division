@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Required meta tags -->
+    
+        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="isd_timeline.css">
+        <!-- CSS -->
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+        <!-- Font -->
+
+        <!-- Title and logo -->
+        <title>Indian Spearhead Division</title>
+        <link rel="icon" type="image/x-icon" href="C:\Users\arnav\Documents\Main Workspace\ISD Website\Media\ISD_logo_withBG_compressed.png">
+        <!-- Title and logo -->
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- JQuery -->
+
+      </head>
+
+      <body>
+        <!-- Javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="isd_timeline.js" defer></script>
+        <!-- Javascript -->
+
+        <!-- loader -->
+        <div class="loader" id="loader">
+          <div class="loader-inner">
+            <div class="loader-line-wrap">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+              <div class="loader-line"></div>
+            </div>
+          </div>
+        </div>
+        <script>
+          $(document).ready(function(){
+            $(".loader").fadeOut("slow");
+          });
+        </script>
+        <!-- loader -->
+
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/0ee078977b.js" crossorigin="anonymous"></script>
+        <!-- Font awesome -->
+
+        <!-- Header -->
+        <div class="container-xl text-center" id="header_container">
+            <div class="row align-items-center d-flex justify-content-center">
+                <div class="col align-items-center d-flex justify-content-center">
+                  <h1 class="display-1" id="header_title">INDIAN SPEARHEAD DIVISION</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+
+        <!-- Navbar -->
+        <div class="container-xl sticky-top text-center" id="navbar_container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#" id="navbar_title">ISD</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="C:\Users\arnav\Documents\Main Workspace\ISD Website\index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="C:\Users\arnav\Documents\Main Workspace\ISD Website\About_us.html">About us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="C:\Users\arnav\Documents\Main Workspace\ISD Website\gallery.html">Gallery</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          ISD Wiki
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="C:\Users\arnav\Documents\Main Workspace\ISD Website\isd_medical.html">ISD Medical</a></li>
+                          <li><a class="dropdown-item" href="C:\Users\arnav\Documents\Main Workspace\ISD Website\isd_timeline.html">ISD Time line</a></li>
+                        </ul>
+                      </li>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar -->
+
+        <!-- Main container -->
+        <div class="container-xl text-start">
+          <div class="row">
+            <!-- Main container col left -->
+            <div class="col-md-9" id="main_container_col_left">
+              <div class="container-fluid" id="table_container">
+                <div class="table-responsive">
+                  <table class="table table-dark table-hover" id="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Op no.</th>
+                        <th scope="col">Operation name</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" id="row_effect">1</th>
+                        <td id="row_effect">OP LIGHTENING STRIKE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">2</th>
+                        <td id="row_effect">OP ATLANTIC OVERDOSE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">3</th>
+                        <td id="row_effect">OP TWO TIDES</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">4</th>
+                        <td id="row_effect">OP UNKNOWN</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">5</th>
+                        <td id="row_effect">OP INFINITE MISCHIEF</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">6</th>
+                        <td id="row_effect">OP SAVIOUR OF MOTHERLAND</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">7</th>
+                        <td id="row_effect">OP EXPANSION DEL HORIZONTE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">8</th>
+                        <td id="row_effect">OP CHACHRO RAID</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">9</th>
+                        <td id="row_effect">OP THE ULTIMATUM</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">10</th>
+                        <td id="row_effect">OP FIRST STRIKE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">11</th>
+                        <td id="row_effect">OP FLANK FOIST</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">12</th>
+                        <td id="row_effect">OP DECARTELIZATION</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">13</th>
+                        <td id="row_effect">OP ISAF ONE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">14</th>
+                        <td id="row_effect">OP QUEEN OF HEARTS</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">15</th>
+                        <td id="row_effect">OP SERVAL</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">16</th>
+                        <td id="row_effect">OP CYPRUS</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">17</th>
+                        <td id="row_effect">OP BIREN</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">18</th>
+                        <td id="row_effect">OP FALLEN HEROES</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">19</th>
+                        <td id="row_effect">OP CARTEL SABOTAGE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">20</th>
+                        <td id="row_effect">OP SNATCHBACK</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">21</th>
+                        <td id="row_effect">OP TERRORIST RECALL</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">22</th>
+                        <td id="row_effect">OP OPERA</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">23</th>
+                        <td id="row_effect">OP HATRICK</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">24</th>
+                        <td id="row_effect">OP VIP ESCORT</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">25</th>
+                        <td id="row_effect">OP INTISAR</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">26</th>
+                        <td id="row_effect">OP WIPEOUT</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">27</th>
+                        <td id="row_effect">OP BLUE FIRE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">28</th>
+                        <td id="row_effect">OP REVENGE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">29</th>
+                        <td id="row_effect">OP LITHIUM</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">30</th>
+                        <td id="row_effect">OP KAVERI</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">31</th>
+                        <td id="row_effect">OP TRIAGON</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">32</th>
+                        <td id="row_effect">OP PUSHP</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">33</th>
+                        <td id="row_effect">OP DHALL</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">34</th>
+                        <td id="row_effect">OP KURKSHESTREA</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">35</th>
+                        <td id="row_effect">OP NIGHTRIDER</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">36</th>
+                        <td id="row_effect">OP SAHAS</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">37</th>
+                        <td id="row_effect">OP CHAKRAVYUH</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">38</th>
+                        <td id="row_effect">OP QUICK STRIKE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">39</th>
+                        <td id="row_effect">OP CHAKRAVYU BHEDUM</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">40</th>
+                        <td id="row_effect">OP VIPERGLADE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">41</th>
+                        <td id="row_effect">OP DOZAKH</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">42</th>
+                        <td id="row_effect">OP GREENSHIELD</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">43</th>
+                        <td id="row_effect">OP BLAZING BRANCH</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">44</th>
+                        <td id="row_effect">OP HYPERBOLA</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">45</th>
+                        <td id="row_effect">OP RANGO</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">46</th>
+                        <td id="row_effect">OP IRONGUARD</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">47</th>
+                        <td id="row_effect">OP PHOENIX</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">48</th>
+                        <td id="row_effect">OP STARDEW</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">49</th>
+                        <td id="row_effect">OP DESERT CANOPY</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">50</th>
+                        <td id="row_effect">OP EAGLE EYE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">51</th>
+                        <td id="row_effect">OP OKAPI</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">52</th>
+                        <td id="row_effect">OP WARTHOG</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">53</th>
+                        <td id="row_effect">OP TACFIELD</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">54</th>
+                        <td id="row_effect">OP CASA LIMPIA</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">55</th>
+                        <td id="row_effect">OP STARGATE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">56</th>
+                        <td id="row_effect">OP ALTERCASE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">57</th>
+                        <td id="row_effect">OP FALLENANGEL</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">58</th>
+                        <td id="row_effect">OP NIGHTDELVE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">59</th>
+                        <td id="row_effect">OP SANGRAM SAGAR</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">60</th>
+                        <td id="row_effect">OP STARGATE ALPHA/BRAVO/CHARLIE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">61</th>
+                        <td id="row_effect">OP KNIGHTFALL</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">62</th>
+                        <td id="row_effect">OP NIGHTFALL</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">63</th>
+                        <td id="row_effect">OP MORAL IMPERATIVE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">64</th>
+                        <td id="row_effect">OP HACKSAW</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">65</th>
+                        <td id="row_effect">OP WINNEBAGO</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">66</th>
+                        <td id="row_effect">OP HARD CARRY</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" id="row_effect">67</th>
+                        <td id="row_effect">OP OKAPI-4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Main container col left -->
+
+            <!-- Main container col Right -->
+            <div class="col-md-3" id="main_container_col_right">
+              <!-- Site update msg -->
+              <h4 id="site_update_msg_header">Site Updated on</h4>
+              <p class="fs-6" id="site_update_msg_date">15 February 2024</p>
+              <!-- Site update msg -->
+
+              <!-- Events -->
+              <div class="fuild-container" id="event_container">
+                <h4 id="event_header">Events</h4>
+                <div class="fluid-container text-center d-flex" id="event_box">
+                  <p class="fs-6" id="event_text">Saturday (21:00) - Main Op</p>
+                </div>
+                <div class="fluid-container text-center d-flex" id="event_box">
+                  <p class="fs-6" id="event_text">Sunday (15:00) - Main Op</p>
+                </div>
+              </div>
+              <!-- Events -->
+
+              <!-- Server info -->
+              <div class="fuild-container text-center" id="server_info_container">
+                <h4 id="site_info_header">Server info</h4>
+                <div class="fluid-container text-center d-flex" id="server_info_status_box">
+                  <p class="fs-6" id="server_info_text">Server status : </p>
+                </div>
+                <div class="fluid-container text-center d-flex" id="server_info_map_box">
+                  <p class="fs-6" id="server_info_text">Map : </p>
+                </div>
+                <div class="fluid-container text-center d-flex" id="server_info_players_box">
+                  <p class="fs-6" id="server_info_text">players online : </p>
+                </div>
+                <button type="button" class="btn btn-outline-*" id="site_info_reload_button" onclick="reloadData()"><i class="fa-solid fa-rotate" id="site_info_reload_button_logo"></i></button>
+              </div>
+              <!-- Server info -->
+
+              <!-- More -->
+              <h4 id="more_header">More</h4>
+              <ul>
+                <li><p class="fs-6" id="more_list_item"><a id="more_list_item" href="C:\Users\arnav\Documents\Main Workspace\ISD Website\isd_medical.html">ISD Medical</a></p></li>
+                <li><p class="fs-6" id="more_list_item"><a id="more_list_item" href="C:\Users\arnav\Documents\Main Workspace\ISD Website\isd_timeline.html">ISD Time line</a></p></li>
+                <li><p class="fs-6" id="more_list_item"><a id="more_list_item" href="https://www.youtube.com/@ISD" target="_blank">ISD youtube</a></p></li>
+                <li><p class="fs-6" id="more_list_item"><a id="more_list_item" href="https://units.arma3.com/unit/indianspearheaddivision" target="_blank">ISD arma 3 unit</a></p></li>
+              </ul>
+              <!-- More -->
+            </div>
+            <!-- Main container col Right -->
+          </div>
+        </div>
+        <!-- Main container -->
+
+        <!-- Footer -->
+        <div class="container-xl text-center" id="footer_container">
+          <div class="row">
+            <div class="col-2"></div>
+              <div class="col-8-lg col-12-sm text-center" id="footer_col">
+                <a href="https://discord.com/invite/ujDpNqmjM3" target="_blank" class="btn btn-outline-*" role="button" id="footer_button"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.instagram.com/indianspearheaddivison" target="_blank" class="btn btn-outline-*" role="button" id="footer_button"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="https://twitter.com/INSHDivision" target=_blank class="btn btn-outline-*" role="button" id="footer_button"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://steamcommunity.com/groups/IndianSpearheadDivision" target="_blank" class="btn btn-outline-*" role="button" id="footer_button"><i class="fa-brands fa-steam"></i></a>
+              </div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+        <!-- Footer -->
+
+        <!-- Copy right -->
+        <div class="container-xl text-center" id="copy_right_container">
+          <p class="fs-6" id="copy_right_text">© 2023 ISD | All rights belong to respective owners | <a href="https://linktr.ee/eddscrystal" target="_blank">website developed by</a> | site version 3.1.1</p>
+        </div>
+        <!-- Copy right -->
+
+      </body>
+</html>

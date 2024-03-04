@@ -182,6 +182,15 @@ body
 }
 /********************** Main container col left ***********************/
 
+/********************** Isd time line ***********************/
+#isd_timeline
+{
+    font-family: 'Noto Sans', sans-serif;
+    padding: 20px;
+    color: #E67E22;
+}
+/********************** Isd time line ***********************/
+
 /********************** Table Container ***********************/
 #table_container
 {
